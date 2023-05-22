@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_toolbar_grey"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dialog_stream_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/bottom_indent"
+        android:layout_marginTop="@dimen/basic_indent"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:layout_marginBottom="@dimen/basic_indent"
+        android:autofillHints="noHint"
+        android:hint="@string/stream_name_hint"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="60"
+        android:textColor="@color/text_dark_gray"
+        android:textColorHint="@color/text_dark_gray"
+        android:theme="@style/CustomEditTextStyle" />
+
+    <EditText
+        android:id="@+id/dialog_stream_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/bottom_indent"
+        android:layout_marginTop="@dimen/basic_indent"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:layout_marginBottom="@dimen/basic_indent"
+        android:autofillHints="noHint"
+        android:hint="@string/stream_description_hint"
+        android:inputType="text"
+        android:lines="1"
+        android:textColor="@color/text_dark_gray"
+        android:textColorHint="@color/text_dark_gray"
+        android:theme="@style/CustomEditTextStyle" />
+
+</LinearLayout>

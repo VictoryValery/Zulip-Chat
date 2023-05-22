@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.screenMessages.MessagesFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/ToolBar"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/background_not_selected"
+        app:contentInsetEnd="@dimen/dim_0dp"
+        app:contentInsetStart="@dimen/dim_0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/tool_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_view_height"
+                android:background="@color/green_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_toolbar"
+                style="@style/TitleToolbarStyle"
+                android:layout_width="@dimen/dim_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_toolbar_marginStart"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingEnd="@dimen/basic_indent"
+                android:text="@string/general"
+                app:layout_constraintBottom_toBottomOf="@+id/back_arrow_toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/back_arrow_toolbar"
+                app:layout_constraintTop_toTopOf="@+id/back_arrow_toolbar" />
+
+            <ImageButton
+                android:id="@+id/back_arrow_toolbar"
+                android:layout_width="@dimen/back_arrow_toolbar"
+                android:layout_height="@dimen/back_arrow_toolbar"
+                android:layout_marginStart="@dimen/back_arrow_toolbar_marginStart"
+                android:background="@null"
+                android:contentDescription="@string/content_description_move_back_on_previous_screen"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/tool_bar_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tool_bar_view" />
+
+            <TextView
+                android:id="@+id/text_toolbar"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_toolbar_height"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingHorizontal="@dimen/basic_indent"
+                android:paddingTop="@dimen/basic_indent_half"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tool_bar_view"
+                tools:text="Topic: #testing" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_message"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/dim_0dp"
+        android:layout_marginBottom="@dimen/basic_indent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/send_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        app:stackFromEnd="true" />
+
+    <ProgressBar
+        android:id="@+id/page_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/green_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/green_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/send_layout"
+        layout="@layout/send_message_with_topic_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/messages_button_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginHorizontal="@dimen/basic_indent"
+        android:backgroundTint="@color/green_dark"
+        android:text="@string/Subscribe"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/basic_indent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/send_layout"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_move_to_last_messages"
+            android:elevation="@dimen/floating_action_button_elevation"
+            android:src="@drawable/scroll_down"
+            app:fabSize="mini" />
+
+        <View
+            android:id="@+id/badge"
+            android:layout_width="@dimen/floating_action_button_badge"
+            android:layout_height="@dimen/floating_action_button_badge"
+            android:layout_gravity="top|end"
+            android:background="@drawable/badge_background"
+            android:elevation="@dimen/floating_action_button_badge_elevation" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

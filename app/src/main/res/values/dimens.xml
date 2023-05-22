@@ -1,0 +1,75 @@
+<resources>
+    <dimen name="dim_0dp">0dp</dimen>
+    <dimen name="avatar_size">36dp</dimen>
+    <dimen name="basic_indent">8dp</dimen>
+    <dimen name="bottom_indent">16dp</dimen>
+    <dimen name="basic_margin">50dp</dimen>
+
+    <dimen name="add_view_height">32dp</dimen>
+    <dimen name="add_view_width">32dp</dimen>
+
+    <dimen name="separator_padding">18dp</dimen>
+    <dimen name="separator_padding_top">2dp</dimen>
+    <dimen name="separator_padding_bottom">2dp</dimen>
+    <dimen name="width_date_separator">76dp</dimen>
+    <dimen name="height_date_separator">22dp</dimen>
+
+    <dimen name="bottom_sheet_height">346dp</dimen>
+
+    <dimen name="send_message_layout_height">62dp</dimen>
+    <dimen name="send_message_frame_height">50dp</dimen>
+    <dimen name="send_message_frame_marginStart">10dp</dimen>
+    <dimen name="send_message_frame_marginEnd">12dp</dimen>
+    <dimen name="send_message_button">40dp</dimen>
+
+    <dimen name="toolBar_height">114dp</dimen>
+    <dimen name="tool_bar_view_height">70dp</dimen>
+    <dimen name="title_toolbar_marginStart">42dp</dimen>
+    <dimen name="back_arrow_toolbar">24dp</dimen>
+    <dimen name="back_arrow_toolbar_marginStart">22dp</dimen>
+    <dimen name="search_toolbar_height">64dp</dimen>
+    <dimen name="profile_avatar_size">184dp</dimen>
+    <dimen name="button_logout_width">184dp</dimen>
+    <dimen name="button_logout_height">52dp</dimen>
+    <dimen name="button_logout_margin_bottom">64dp</dimen>
+    <dimen name="webstatus_text_margin_start">20dp</dimen>
+    <dimen name="profile_avatar_margin_top">112dp</dimen>
+    <dimen name="profile_toolbar_height">64dp</dimen>
+    <dimen name="user_avatar_size">64dp</dimen>
+    <dimen name="user_text_margin_start">10dp</dimen>
+    <dimen name="user_margin_start">14dp</dimen>
+    <dimen name="user_margin_vertical">12dp</dimen>
+
+    <dimen name="users_search_toolbar_height">64dp</dimen>
+    <dimen name="search_ic_margin_end">28dp</dimen>
+    <dimen name="stream_holder_height">62dp</dimen>
+    <dimen name="stream_ic_margin_end">42dp</dimen>
+    <dimen name="stream_title_margin_start">20dp</dimen>
+    <dimen name="topic_height">42dp</dimen>
+    <dimen name="topic_margin_bottom">2dp</dimen>
+    <dimen name="topic_title_margin_start">42dp</dimen>
+    <dimen name="topic_msg_amount_margin_start">24dp</dimen>
+    <dimen name="streams_tab_layout_height">80dp</dimen>
+    <dimen name="profile_name_shimmer_width">350dp</dimen>
+    <dimen name="profile_name_shimmer_height">44dp</dimen>
+    <dimen name="profile_status_text_shimmer_width">150dp</dimen>
+    <dimen name="profile_status_text_shimmer_height">40dp</dimen>
+    <dimen name="profile_webstatus_text_shimmer_width">100dp</dimen>
+    <dimen name="profile_webstatus_text_shimmer_height">24dp</dimen>
+    <dimen name="stream_title_shimmer_height">30dp</dimen>
+    <dimen name="stream_topics_button_shimmer">40dp</dimen>
+    <dimen name="divider_height">0.1dp</dimen>
+    <dimen name="user_name_shimmer_height">30dp</dimen>
+    <dimen name="user_email_shimmer_height">20dp</dimen>
+    <dimen name="user_email_shimmer_marginTop">2dp</dimen>
+    <dimen name="basic_indent_half">4dp</dimen>
+    <dimen name="send_message_topic_frame_height">32dp</dimen>
+    <dimen name="text_toolbar_height">40dp</dimen>
+    <dimen name="floating_action_button_elevation">4dp</dimen>
+    <dimen name="floating_action_button_badge">14dp</dimen>
+    <dimen name="floating_action_button_badge_elevation">8dp</dimen>
+    <dimen name="stream_fab_margin_end">38dp</dimen>
+    <dimen name="streams_tab_layout_padding_bottom">24dp</dimen>
+    <dimen name="topic_holder_title_max_width">250dp</dimen>
+
+</resources>

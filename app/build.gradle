@@ -1,0 +1,109 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlinx-serialization'
+}
+
+android {
+    namespace 'com.victoryvalery.tfsproject'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.victoryvalery.tfsproject"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+    }
+
+    testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation deps.androidx.core
+    implementation deps.androidx.appCompat
+    implementation deps.androidx.constraintLayout
+    implementation deps.com.google.android.material.material
+
+    //fragments
+    implementation deps.androidx.fragment
+
+    //Recycler
+    implementation deps.androidx.recyclerview
+
+    //Glide
+    implementation deps.com.github.skydoves.glide
+
+    //Cicerone
+    implementation deps.com.github.terrakok.cicerone
+
+    //Shimmer
+    implementation deps.com.facebook.shimmer
+
+    // Network
+    implementation deps.org.jetbrains.kotlinx.serialization
+    implementation deps.com.squareup.retrofit2
+    implementation deps.com.jakewharton.retrofit
+    implementation deps.com.squareup.okhttp3.okhttp
+    implementation deps.com.squareup.okhttp3.interceptor
+
+    //Elmsilie
+    implementation deps.com.github.vivid_money.store
+    implementation deps.com.github.vivid_money.core
+    implementation deps.com.github.vivid_money.android
+    implementation deps.com.github.vivid_money.coroutines
+
+    //Dagger
+    implementation deps.com.google.dagger.dagger
+    kapt deps.com.google.dagger.compiler
+
+    //Room
+    implementation deps.androidx.room.runtime
+    implementation deps.androidx.room.ktx
+    kapt deps.androidx.room.compiler
+
+    //Markwon
+    implementation deps.io.markwon.core
+    implementation deps.io.markwon.image
+    implementation deps.io.markwon.inline_parser
+    implementation deps.io.markwon.coil
+
+    //Test
+    implementation deps.org.jetbrains.kotlinx.coroutines
+    testImplementation deps.junit
+    testImplementation deps.androidx.arch.core_testing
+    testImplementation deps.org.jetbrains.kotlinx.coroutines_test
+    testImplementation deps.io.mockk
+    androidTestImplementation deps.androidx.test.junit
+    androidTestImplementation deps.androidx.test.runner
+    androidTestImplementation deps.com.kaspersky.kaspresso
+    androidTestImplementation deps.com.squareup.okhttp3.mockwebserver
+    androidTestUtil deps.androidx.test.orchestrator
+
+
+}

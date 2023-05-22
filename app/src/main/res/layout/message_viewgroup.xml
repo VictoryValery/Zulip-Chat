@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:parentTag="com.victoryvalery.tfsproject.presentation.customViews.MessageLayout">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/message_avatar_image"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginLeft="@dimen/basic_indent"
+        android:layout_marginTop="@dimen/basic_indent"
+        android:layout_marginRight="@dimen/basic_indent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prototype"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CornerSize50pct" />
+
+    <TextView
+        android:id="@+id/message_name_textView"
+        style="@style/MessageNormalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/basic_margin"
+        android:paddingLeft="@dimen/basic_indent"
+        android:paddingTop="@dimen/basic_indent"
+        android:paddingRight="@dimen/basic_indent"
+        android:paddingBottom="@dimen/bottom_indent" />
+
+    <TextView
+        android:id="@+id/message_textView"
+        style="@style/MessageNormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/basic_margin"
+        android:paddingLeft="@dimen/basic_indent"
+        android:paddingTop="@dimen/basic_indent"
+        android:paddingRight="@dimen/basic_indent" />
+
+    <com.victoryvalery.tfsproject.presentation.customViews.CustomFlexBoxGroup
+        android:id="@+id/custom_flexBoxGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/basic_margin"
+        android:layout_marginTop="@dimen/basic_indent" />
+</merge>

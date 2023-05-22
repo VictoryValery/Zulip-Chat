@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">TFS</string>
+    <string name="menu_channels">channels</string>
+    <string name="menu_people">people</string>
+    <string name="menu_profile">profile</string>
+    <string name="enter_message">Message…</string>
+    <string name="enter_topic">Topic…</string>
+    <string name="general" translatable="false">#general</string>
+    <string name="profile_title">Profile</string>
+    <string name="log_out">Log out</string>
+    <string name="users_hint">Users…</string>
+    <string name="stream_name_hint">Stream name…</string>
+    <string name="stream_description_hint">Stream description…</string>
+    <string name="status_active" translatable="false">active</string>
+    <string name="status_offline" translatable="false">offline</string>
+
+    <string name="topic_name_text" translatable="false">#%s</string>
+    <string name="topic_msg">%s mes</string>
+    <string name="search_streams_hint">Search…</string>
+    <string name="in_a_meeting">In a meeting</string>
+    <string name="subscribed">Subscribed</string>
+    <string name="all_streams_tab">All streams</string>
+    <string name="subscribed_tab">Subscribed</string>
+    <string name="status_idle" translatable="false">idle</string>
+    <string name="Internet_error" translatable="false">Unable to resolve host</string>
+    <string name="check_internet_connection">Check internet connection</string>
+    <string name="add_stream">Add Stream</string>
+    <string name="default_Topic">no topic</string>
+    <string name="content_description_move_back_on_previous_screen">Move back on previous screen</string>
+    <string name="content_description_move_to_last_messages">Move to last messages</string>
+    <string name="content_description_send_message_or_add_file">Send message or add file</string>
+    <string name="content_description_show_stream_topics">Show stream`s topics</string>
+    <string name="bottom_sheet_dialog_holder">Bottom sheet dialog holder</string>
+    <string name="add_reaction_dialog_action">Add reaction</string>
+    <string name="delete_message_dialog_action">Delete message</string>
+    <string name="edit_message_dialog_action">Edit message</string>
+    <string name="change_message_topic_dialog_action">Move message to other topic</string>
+    <string name="copy_message_dialog_action">Copy message to clipboard</string>
+    <string name="message_copied">Text copied to clipboard</string>
+    <string name="label" translatable="false">label</string>
+    <string name="fragment_profile_button_back">Profile fragment arrow back</string>
+    <string name="shimmer_item_content_description" translatable="false">Shimmer item</string>
+    <string name="messages_fragment_choose_topic">Choose topic:</string>
+    <string name="messages_fragment_move_message">Move</string>
+    <string name="cancel_negative_button_text">Cancel</string>
+    <string name="exception_open_file_input_stream" translatable="false">Unable to open file input stream</string>
+    <string name="unknown_file_name" translatable="false">unknown</string>
+    <string name="file_name" translatable="false">file</string>
+    <string name="base_topic_name">no topic</string>
+    <string name="save_positive_button_text">Save</string>
+    <string name="edit_message_window_title">Edit message:</string>
+    <string name="input_stream_name_snackbar_text">Input Stream name</string>
+    <string name="add_positive_button_text">Add</string>
+    <string name="add_new_stream_dialog_title">Add new stream</string>
+    <string name="download_message_content_action">Download message content</string>
+    <string name="file_is_downloading">File is downloading…</string>
+    <string name="user_web_status_content_description">User web status</string>
+    <string name="edit_message_hint">Edit message…</string>
+    <string name="Subscribe">Subscribe</string>
+</resources>

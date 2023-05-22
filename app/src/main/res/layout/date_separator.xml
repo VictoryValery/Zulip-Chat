@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/basic_indent">
+
+    <TextView
+        android:id="@+id/date_separator"
+        style="@style/DateSeparator"
+        android:layout_width="@dimen/width_date_separator"
+        android:layout_height="@dimen/height_date_separator"
+        android:layout_gravity="center"
+        android:background="@drawable/date_separator_rounded_bg"
+        android:paddingTop="@dimen/separator_padding_top"
+        android:paddingBottom="@dimen/separator_padding_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10 Mar" />
+
+</FrameLayout>

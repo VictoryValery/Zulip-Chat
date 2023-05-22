@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.TFSProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background_dark_gray</item>
+        <item name="colorPrimaryVariant">@color/green_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_main</item>
+        <item name="colorSecondaryVariant">@color/green_main</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/background_toolbar_grey</item>
+        <item name="android:navigationBarColor">@color/background_toolbar_grey</item>
+        <item name="android:colorBackground">@color/background</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

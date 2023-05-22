@@ -1,0 +1,51 @@
+{
+  "result": "success",
+  "msg": "",
+  "subscriptions": [
+    {
+      "can_remove_subscribers_group_id": 369908,
+      "date_created": 1678368581,
+      "description": "A private stream for core team members.",
+      "first_message_id": 340605723,
+      "history_public_to_subscribers": false,
+      "invite_only": true,
+      "is_web_public": false,
+      "message_retention_days": null,
+      "name": "Mobile",
+      "rendered_description": "<p>A private stream for core team members.</p>",
+      "stream_id": 375891,
+      "stream_post_policy": 1,
+      "is_announcement_only": false
+    },
+    {
+      "can_remove_subscribers_group_id": 369908,
+      "date_created": 1678368581,
+      "description": "A private stream for core team members.",
+      "first_message_id": 340605723,
+      "history_public_to_subscribers": false,
+      "invite_only": true,
+      "is_web_public": false,
+      "message_retention_days": null,
+      "name": "general",
+      "rendered_description": "<p>A private stream for core team members.</p>",
+      "stream_id": 375892,
+      "stream_post_policy": 1,
+      "is_announcement_only": false
+    },
+    {
+      "can_remove_subscribers_group_id": 369908,
+      "date_created": 1678368581,
+      "description": "A private stream for core team members.",
+      "first_message_id": 340605723,
+      "history_public_to_subscribers": false,
+      "invite_only": true,
+      "is_web_public": false,
+      "message_retention_days": null,
+      "name": "All streams",
+      "rendered_description": "<p>A private stream for core team members.</p>",
+      "stream_id": 375893,
+      "stream_post_policy": 1,
+      "is_announcement_only": false
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "result": "success",
+  "msg": "",
+  "messages": [
+    {
+      "id": 346322722,
+      "sender_id": 100006,
+      "content": "@_**VictoryValery|598404** changed the [access permissions](/help/stream-permissions) for this stream from **Public** to **Private, protected history**.",
+      "recipient_id": 1046343,
+      "timestamp": 1680427298,
+      "client": "Internal",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user": {
+            "email": "user598421@victoryvalery.zulipchat.com",
+            "id": 598421,
+            "full_name": "ladalady21110"
+          },
+          "user_id": 598421
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user": {
+            "email": "user598404@victoryvalery.zulipchat.com",
+            "id": 598404,
+            "full_name": "VictoryValery"
+          },
+          "user_id": 598404
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipcore",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://zulip-avatars.s3.amazonaws.com/1000/9fd9de59f964f6e3af477006ddd0116211347010?version=2",
+      "content_type": "text/x-markdown"
+    },
+    {
+      "id": 346322723,
+      "sender_id": 100006,
+      "content": "@_**VictoryValery|598404** changed the [posting permissions](/help/stream-sending-policy) for this stream:\n\n* **Old permissions**: All stream members can post.\n* **New permissions**: Only organization administrators can post.",
+      "recipient_id": 1046343,
+      "timestamp": 1680427298,
+      "client": "Internal",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user": {
+            "email": "user598404@victoryvalery.zulipchat.com",
+            "id": 598404,
+            "full_name": "VictoryValery"
+          },
+          "user_id": 598404
+        },
+        {
+          "emoji_name": "working_on_it",
+          "emoji_code": "1f6e0",
+          "reaction_type": "unicode_emoji",
+          "user": {
+            "email": "user598421@victoryvalery.zulipchat.com",
+            "id": 604182,
+            "full_name": "ladalady21110"
+          },
+          "user_id": 604182
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user": {
+            "email": "user598421@victoryvalery.zulipchat.com",
+            "id": 598421,
+            "full_name": "ladalady21110"
+          },
+          "user_id": 598421
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipcore",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://zulip-avatars.s3.amazonaws.com/1000/9fd9de59f964f6e3af477006ddd0116211347010?version=2",
+      "content_type": "text/x-markdown"
+    },
+    {
+      "id": 346793869,
+      "sender_id": 598404,
+      "content": "toptop",
+      "recipient_id": 1046343,
+      "timestamp": 1680602458,
+      "client": "okhttp",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "VictoryValery",
+      "sender_email": "user598404@victoryvalery.zulipchat.com",
+      "sender_realm_str": "victoryvalery",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://secure.gravatar.com/avatar/318197c3d20d333d122031e8141f342b?d=identicon&version=1",
+      "content_type": "text/x-markdown"
+    },
+    {
+      "id": 347979583,
+      "sender_id": 598404,
+      "content": "ehf",
+      "recipient_id": 1046343,
+      "timestamp": 1681028862,
+      "client": "website",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "VictoryValery",
+      "sender_email": "user598404@victoryvalery.zulipchat.com",
+      "sender_realm_str": "victoryvalery",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://secure.gravatar.com/avatar/318197c3d20d333d122031e8141f342b?d=identicon&version=1",
+      "content_type": "text/x-markdown"
+    },
+    {
+      "id": 350375847,
+      "sender_id": 598404,
+      "content": "dot",
+      "recipient_id": 1046343,
+      "timestamp": 1681707660,
+      "client": "okhttp",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "VictoryValery",
+      "sender_email": "user598404@victoryvalery.zulipchat.com",
+      "sender_realm_str": "victoryvalery",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://secure.gravatar.com/avatar/318197c3d20d333d122031e8141f342b?d=identicon&version=1",
+      "content_type": "text/x-markdown"
+    },
+    {
+      "id": 350375914,
+      "sender_id": 598404,
+      "content": "dot",
+      "recipient_id": 1046343,
+      "timestamp": 1681707666,
+      "client": "website",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "VictoryValery",
+      "sender_email": "user598404@victoryvalery.zulipchat.com",
+      "sender_realm_str": "victoryvalery",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://secure.gravatar.com/avatar/318197c3d20d333d122031e8141f342b?d=identicon&version=1",
+      "content_type": "text/x-markdown"
+    },
+    {
+      "id": 352201233,
+      "sender_id": 598404,
+      "content": "hello",
+      "recipient_id": 1046343,
+      "timestamp": 1682325307,
+      "client": "okhttp",
+      "subject": "stream events",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read"
+      ],
+      "sender_full_name": "VictoryValery",
+      "sender_email": "user598404@victoryvalery.zulipchat.com",
+      "sender_realm_str": "victoryvalery",
+      "display_recipient": "All streams",
+      "type": "stream",
+      "stream_id": 380424,
+      "avatar_url": "https://secure.gravatar.com/avatar/318197c3d20d333d122031e8141f342b?d=identicon&version=1",
+      "content_type": "text/x-markdown"
+    }
+  ],
+  "found_anchor": false,
+  "found_oldest": true,
+  "found_newest": true,
+  "history_limited": false,
+  "anchor": 0
+}

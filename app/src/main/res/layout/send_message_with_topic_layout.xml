@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <FrameLayout
+        android:id="@+id/send_topic_frame"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/send_message_topic_frame_height"
+        android:layout_marginStart="@dimen/send_message_frame_marginStart"
+        android:layout_marginEnd="@dimen/send_message_frame_marginEnd"
+        android:layout_marginBottom="@dimen/basic_indent"
+        android:background="@drawable/circle_bg"
+        app:layout_constraintBottom_toTopOf="@id/send_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/message_topic_edit_text"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/bottom_indent"
+            android:layout_marginTop="@dimen/basic_indent_half"
+            android:layout_marginEnd="@dimen/basic_indent"
+            android:layout_marginBottom="@dimen/basic_indent_half"
+            android:background="@null"
+            android:hint="@string/enter_topic"
+            android:singleLine="true"
+            android:maxLength="60"
+            android:textColor="@color/text_dark_gray"
+            android:textColorHint="@color/text_dark_gray"
+            tools:text="@string/enter_topic" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/send_frame"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/send_message_frame_height"
+        android:layout_marginStart="@dimen/send_message_frame_marginStart"
+        android:layout_marginEnd="@dimen/send_message_frame_marginEnd"
+        android:layout_marginBottom="@dimen/basic_indent_half"
+        android:background="@drawable/circle_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/send_topic_frame">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/bottom_indent"
+            android:layout_marginTop="@dimen/basic_indent"
+            android:layout_marginEnd="@dimen/basic_indent"
+            android:layout_marginBottom="@dimen/basic_indent"
+            android:background="@null"
+            android:hint="@string/enter_message"
+            android:textColor="@color/text_dark_gray"
+            android:textColorHint="@color/text_dark_gray"
+            tools:text="@string/enter_message" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/send_button"
+        android:layout_width="@dimen/send_message_button"
+        android:layout_height="@dimen/send_message_button"
+        android:layout_marginEnd="@dimen/send_message_frame_marginEnd"
+        android:background="@drawable/button_ripple"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_send_message_or_add_file"
+        android:focusable="true"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/send_topic_frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

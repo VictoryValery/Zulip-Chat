@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_toolbar_grey"
+            app:contentInsetEnd="@dimen/dim_0dp"
+            app:contentInsetStart="@dimen/dim_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/profile_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_toolbar_height">
+
+                <ImageButton
+                    android:id="@+id/back_arrow_toolbar"
+                    android:layout_width="@dimen/back_arrow_toolbar"
+                    android:layout_height="@dimen/back_arrow_toolbar"
+                    android:layout_marginStart="@dimen/back_arrow_toolbar_marginStart"
+                    android:background="@null"
+                    android:contentDescription="@string/shimmer_item_content_description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_back_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_toolbar"
+                    style="@style/TitleToolbarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/back_arrow_toolbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/back_arrow_toolbar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_avatar_image"
+            android:layout_width="@dimen/profile_avatar_size"
+            android:layout_height="@dimen/profile_avatar_size"
+            android:layout_marginTop="@dimen/profile_avatar_margin_top"
+            android:background="@color/background_elem"
+            android:paddingBottom="@dimen/bottom_indent"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_toolbar"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CornerSize15pct" />
+
+        <ImageView
+            android:id="@+id/profile_name"
+            android:layout_width="@dimen/profile_name_shimmer_width"
+            android:layout_height="@dimen/profile_name_shimmer_height"
+            android:background="@drawable/shimmer_back"
+            android:contentDescription="@string/shimmer_item_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_avatar_image" />
+
+        <ImageView
+            android:id="@+id/profile_webstatus_text"
+            style="@style/ProfileWebstatusStyle"
+            android:layout_width="@dimen/profile_webstatus_text_shimmer_width"
+            android:layout_height="@dimen/profile_webstatus_text_shimmer_height"
+            android:layout_marginStart="@dimen/bottom_indent"
+            android:layout_marginTop="@dimen/basic_indent_half"
+            android:background="@drawable/shimmer_back"
+            android:contentDescription="@string/shimmer_item_content_description"
+            app:layout_constraintEnd_toEndOf="@+id/profile_name"
+            app:layout_constraintStart_toStartOf="@+id/profile_name"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name"
+            app:layout_constraintVertical_bias="0.6" />
+
+
+        <FrameLayout
+            android:id="@+id/loading_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/green_main" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

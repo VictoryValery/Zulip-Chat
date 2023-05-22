@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.screenProfile.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_toolbar_grey"
+        app:contentInsetEnd="@dimen/dim_0dp"
+        app:contentInsetStart="@dimen/dim_0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_toolbar_height">
+
+            <ImageButton
+                android:id="@+id/back_arrow_toolbar"
+                android:layout_width="@dimen/back_arrow_toolbar"
+                android:layout_height="@dimen/back_arrow_toolbar"
+                android:layout_marginStart="@dimen/back_arrow_toolbar_marginStart"
+                android:background="@null"
+                android:contentDescription="@string/fragment_profile_button_back"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_toolbar"
+                style="@style/TitleToolbarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_title"
+                app:layout_constraintBottom_toBottomOf="@+id/back_arrow_toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/back_arrow_toolbar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_avatar_image"
+        android:layout_width="@dimen/profile_avatar_size"
+        android:layout_height="@dimen/profile_avatar_size"
+        android:layout_marginTop="@dimen/profile_avatar_margin_top"
+        android:paddingBottom="@dimen/bottom_indent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_toolbar"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CornerSize15pct"
+        tools:src="@drawable/prototype" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        style="@style/ProfileNameStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_avatar_image"
+        tools:text="Darrell Steward" />
+
+
+    <TextView
+        android:id="@+id/profile_webstatus_text"
+        style="@style/ProfileWebstatusStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/profile_name"
+        app:layout_constraintStart_toStartOf="@+id/profile_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        tools:text="offline" />
+
+    <Button
+        android:id="@+id/logout_button"
+        style="@style/LogoutButtonStyle"
+        android:layout_width="@dimen/button_logout_width"
+        android:layout_height="@dimen/button_logout_height"
+        android:layout_marginBottom="@dimen/button_logout_margin_bottom"
+        android:background="@drawable/bg_logout_button"
+        android:text="@string/log_out"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/profile_shimmer"
+        layout="@layout/fragment_profile_shimmer"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

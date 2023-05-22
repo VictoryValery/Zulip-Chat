@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green_main">#2A9D8F</color>
+    <color name="green_dark">#006153</color>
+    <color name="background_dark_gray">#2E2E2E</color>
+    <color name="background">#121212</color>
+    <color name="background_toolbar_grey">#1E1E1E</color>
+    <color name="background_not_selected">#1C1C1C</color>
+    <color name="background_elem">#505050</color>
+    <color name="background_edit_text">#282828</color>
+    <color name="background_date_separator">#070707</color>
+
+    <color name="mustard_main">#E9C46A</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="profile_active">#4AB54D</color>
+    <color name="profile_idle">#FF7700</color>
+    <color name="profile_offline">#E84D4D</color>
+    <color name="text_profile_status">#BCBCBC</color>
+
+    <color name="button_logout">#1B1B1B</color>
+
+    <color name="user_holder_name">#FAFAFA</color>
+    <color name="user_holder_email">#A1A1A1</color>
+
+    <color name="text_light_gray">#EAEAEA</color>
+    <color name="text_dark_gray">#CCCCCC</color>
+    <color name="text_date_separator">#999999</color>
+    <color name="icons_dark_gray">#919191</color>
+
+</resources>

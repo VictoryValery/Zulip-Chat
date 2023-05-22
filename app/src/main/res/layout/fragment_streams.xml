@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.screenStreams.StreamsFragment">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_toolbar_height"
+        android:background="@color/background_toolbar_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_weight="9"
+            android:closeIcon="@null"
+            android:commitIcon="@null"
+            android:goIcon="@null"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_streams_hint"
+            android:searchIcon="@null"
+            android:theme="@style/SearchBarStyle"
+            android:voiceIcon="@null" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/search_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/search_ic_margin_end"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/streams_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/streams_tab_layout_height"
+        android:background="@color/background_toolbar_grey"
+        android:paddingBottom="@dimen/streams_tab_layout_padding_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabIndicatorColor="@color/profile_active"
+        app:tabTextAppearance="@style/TabsTextStyle"
+        app:tabTextColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_streams"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/dim_0dp"
+        android:layout_marginBottom="@dimen/basic_indent"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/stream_holder_height"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streams_tab_layout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/streams_fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/basic_indent"
+        android:layout_marginEnd="@dimen/stream_fab_margin_end"
+        android:contentDescription="@string/add_stream"
+        android:elevation="@dimen/floating_action_button_elevation"
+        android:src="@drawable/ic_add"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/streams_shimmer"
+        android:layout_width="@dimen/dim_0dp"
+        android:layout_height="@dimen/dim_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streams_tab_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+
+            <include layout="@layout/stream_holder_shimmer" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/green_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

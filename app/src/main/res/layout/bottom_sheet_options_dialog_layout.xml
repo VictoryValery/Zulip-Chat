@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_not_selected"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ic_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/basic_indent"
+        android:contentDescription="@string/bottom_sheet_dialog_holder"
+        android:src="@drawable/ic_rectangle" />
+
+    <TextView
+        android:id="@+id/dialog_add_reaction"
+        style="@style/StreamTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginStart="@dimen/stream_title_margin_start"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/add_reaction_dialog_action" />
+
+    <TextView
+        android:id="@+id/dialog_delete_message"
+        style="@style/StreamTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginStart="@dimen/stream_title_margin_start"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/delete_message_dialog_action" />
+
+    <TextView
+        android:id="@+id/dialog_edit_message"
+        style="@style/StreamTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginStart="@dimen/stream_title_margin_start"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/edit_message_dialog_action" />
+
+    <TextView
+        android:id="@+id/dialog_change_message_topic"
+        style="@style/StreamTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginStart="@dimen/stream_title_margin_start"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/change_message_topic_dialog_action" />
+
+    <TextView
+        android:id="@+id/dialog_copy_message"
+        style="@style/StreamTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginStart="@dimen/stream_title_margin_start"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/copy_message_dialog_action" />
+
+    <TextView
+        android:id="@+id/dialog_download_content"
+        style="@style/StreamTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_holder_height"
+        android:layout_marginStart="@dimen/stream_title_margin_start"
+        android:layout_marginEnd="@dimen/basic_indent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/download_message_content_action" />
+
+</LinearLayout>

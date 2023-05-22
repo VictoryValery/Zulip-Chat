@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center"
+    android:paddingVertical="@dimen/basic_indent_half"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/topic_separator"
+        style="@style/TopicSeparator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:paddingHorizontal="@dimen/basic_indent"
+        android:paddingTop="@dimen/separator_padding_top"
+        android:paddingBottom="@dimen/separator_padding_bottom"
+        tools:text="@string/enter_topic" />
+
+    <TextView
+        android:id="@+id/topic_date_separator"
+        style="@style/DateSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingHorizontal="@dimen/basic_indent"
+        android:paddingTop="@dimen/separator_padding_top"
+        android:paddingBottom="@dimen/separator_padding_bottom"
+        tools:text="@string/enter_topic" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topic_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/send_message_topic_frame_height"
+    android:layout_marginStart="@dimen/bottom_indent"
+    android:layout_marginTop="@dimen/basic_indent"
+    android:layout_marginEnd="@dimen/basic_indent"
+    android:layout_marginBottom="@dimen/basic_indent"
+    android:background="@color/background_toolbar_grey"
+    android:ellipsize="end"
+    android:lines="1"
+    android:textAppearance="@style/EditTextStyle"
+    tools:text="@string/enter_topic"/>
